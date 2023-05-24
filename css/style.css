@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f6f6fe;
+  background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+  background-size: auto, auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+}
+
+.container {
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.primary-heading {
+  font-size: 3.2rem;
+  color: #6d708d;
+  margin-bottom: 4rem;
+}
+
+.plan-selector-btn-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.plan-selector-text {
+  font-size: 1.5rem;
+  color: #b3b5c6;
+}
+
+.plan-selector-btn {
+  border: none;
+  background-color: transparent;
+  height: 3.2rem;
+  width: 5.6rem;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  cursor: pointer;
+  position: relative;
+  transition: opacity 0.2s;
+}
+
+.plan-selector-btn:hover {
+  opacity: 0.7;
+}
+
+.plan-selector-btn::after {
+  content: "";
+  display: block;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: #fff;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+  transition: transform 0.2s;
+}
+
+.annual::after {
+  transform: translate(-100%, -50%);
+}
+
+.price-plans-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-plan {
+  width: 35rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 4rem 3.2rem 2.7rem;
+  box-shadow: 0 20px 100px 2px rgba(0, 0, 0, 0.15);
+}
+
+.price-heading {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: #6d708d;
+  margin-bottom: 2rem;
+}
+
+.price-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 7rem;
+  color: #494c5f;
+  margin-bottom: 3rem;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.price-num .dollar {
+  font-size: 4rem;
+}
+
+.transition .price-num {
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.plan-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.feature {
+  font-size: 1.5rem;
+  color: #6d708d;
+  padding: 1.5rem 0 1.6rem;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+
+.plan-features li:nth-child(2) .feature {
+  border: none;
+}
+
+.learn-more-link:link,
+.learn-more-link:visited {
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 1.5rem 0 1.4rem;
+  border-radius: 7px;
+  border: 1px solid #fff;
+}
+
+.learn-more-link:hover,
+.learn-more-link:active {
+  background-size: 0%;
+  border: 1px solid #696fdd;
+  color: #696fdd;
+}
+
+.basic-plan {
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.master-plan {
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.professional-plan {
+  box-shadow: none;
+  padding-top: 6.5rem;
+  border-radius: 10px;
+  height: 50rem;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
+}
+
+.professional-plan .price-heading,
+.professional-plan .price-num,
+.professional-plan .feature {
+  color: #fff;
+}
+
+.professional-plan .feature {
+  border-top: 1px solid #9ea4fc;
+  border-bottom: 1px solid #9ea4fc;
+}
+
+.professional-plan .learn-more-link:link,
+.professional-plan .learn-more-link:visited {
+  background-image: linear-gradient(#fff, #fff);
+  color: #696fdd;
+}
+
+.professional-plan .learn-more-link:hover,
+.professional-plan .learn-more-link:active {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

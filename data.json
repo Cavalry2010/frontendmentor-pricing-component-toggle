@@ -1,0 +1,32 @@
+[
+  {
+    "title": "basic",
+    "monthlyPrice": 19.99,
+    "annualPrice": 199.99,
+    "features": {
+      "storage": "500 GB",
+      "maxUsers": "2",
+      "upload": "3 GB"
+    }
+  },
+  {
+    "title": "professional",
+    "monthlyPrice": 24.99,
+    "annualPrice": 249.99,
+    "features": {
+      "storage": "1 TB",
+      "maxUsers": "5",
+      "upload": "10 GB"
+    }
+  },
+  {
+    "title": "master",
+    "monthlyPrice": 39.99,
+    "annualPrice": 399.99,
+    "features": {
+      "storage": "2 TB",
+      "maxUsers": "10",
+      "upload": "20 GB"
+    }
+  }
+]

@@ -1,0 +1,30 @@
+@media (max-width: 26em) {
+  body {
+    background-image: url("../images/bg-top.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top -3rem right -19.5rem;
+  }
+
+  .container {
+    max-width: 33rem;
+    margin: 5rem auto;
+  }
+
+  .plan-selector-btn-box {
+    margin-bottom: 8rem;
+  }
+
+  .price-plans-box {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .price-plan {
+    max-width: 32.5rem;
+    height: 45rem;
+    padding: 4rem 3.2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 100px 2px rgba(0, 0, 0, 0.15);
+  }
+}
